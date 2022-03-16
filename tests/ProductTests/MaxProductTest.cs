@@ -11,10 +11,9 @@ namespace MaxProductProgram.Tests
         {
             //arrange
             var arrayNumber = new int[] { 1 };
-            var maxProduct = new MaxProduct(arrayNumber);
 
             //assert
-            Assert.Throws<ArgumentException>(() => maxProduct.Pairs);
+            Assert.Throws<ArgumentException>(() => new MaxProduct(arrayNumber));
         }
 
         [Fact]
